@@ -163,11 +163,14 @@ header h2 {
 
 
 
+
+
 .youtube {
     background-color: #FE0100;
     color: #FEFEFF;
     padding: 2rem;
     border-radius: 1rem;
+    margin-bottom: 3rem;
 }
 
 .youtube-header {
@@ -204,15 +207,6 @@ header h2 {
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
 .youtube-audience>* {
     background-color: #FEFEFF;
     color: #0E0F0E;
@@ -244,8 +238,6 @@ header h2 {
     margin-top: 2rem;
 }
 
-
-
 .youtube-something-subs {
     display: flex;
     justify-content: center;
@@ -253,7 +245,100 @@ header h2 {
 }
 
 .youtube-something-subs h4 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
 }
 
+
+
+
+
+
+
+
+
+
+
+.tiktok {
+    background-color: #030100;
+    color: #FEFEFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tiktok-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tiktok-header-icon {
+    width: 10%;
+    background-color: #FEFEFF;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.tiktok-header-icon img {
+    width: 100%;
+
+}
+
+.tiktok-header-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tiktok-header-text h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tiktok-header-text p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tiktok-audience>* {
+    background-color: #FEFEFF;
+    color: #0E0F0E;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex: 50%;
+}
+
+.tiktok-audience h4 {
+    margin-bottom: 1rem;
+}
+
+.tiktok-audience h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tiktok-audience img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.tiktok-audience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    grid-auto-flow: row;
+    margin-top: 2rem;
+}
+
+.tiktok-something-subs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiktok-something-subs h4 {
+    font-size: 4rem;
+    font-weight: 600;
+}
