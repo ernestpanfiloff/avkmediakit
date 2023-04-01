@@ -78,7 +78,9 @@
                 <div class="youtube-something">
                     <h4>Subscribers</h4>
                     <div class="youtube-something-subs">
-                        <h4>174K</h4>
+                        <iframe width="100%" frameborder="0"
+                            src=https://socialcounts.org/youtube-live-subscriber-count/UCFkoTLQnJu4cQELnmgwDqgA/embed?counter=0&style=.title%7Bfont-size%3A20px%7D.odoParrent%7Bcolor%3A+rgba%2814%2C15%2C14%2C1%29%7Dbody%7Bbackground-color%3Argba%28254%2C254%2C255%2C1%29%21important%7D.title%7Bcolor%3A+rgba%2814%2C15%2C14%2C1%29%7D&odoUpColor=rgba%28254%2C1%2C0%2C1%29&odoDownColor=rgba%28254%2C1%2C0%2C1%29&odospeed=1000
+                            style="border: 0; width:100%; height:80px;"></iframe>
                     </div>
                 </div>
                 <div class="youtube-countries">
@@ -117,9 +119,9 @@
                 <div class="tiktok-something">
                     <h4>Subscribers</h4>
                     <div class="tiktok-something-subs">
-                    <iframe height="80px" width="100%" frameborder="0"
+                    <iframe height="80px" width="300px" frameborder="0"
                         src=https://livecounts.io/embed/tiktok-live-follower-counter/aaron.vankampen
-                        style="border: 0; "></iframe>
+                        style="border: 0; width:300px; height:80px;"></iframe>
                     </div>
                 </div>
                 <div class="tiktok-countries">
@@ -141,27 +143,5 @@
         </section>
     </div>
 
-
-    <script>
-        async function fetchSubscriberCount() {
-                const username = 'aaron.vankampen';
-                const fields = 'follower_count';
-                const url = `https://open.tiktokapis.com/v2/user/info/?username=${username}&fields=${fields}`;
-                const accessToken = 'act.1d1021d2aee3d41fee2d2add43456badMFZnrhFhfWotu3Ecuiuka27L56lr!2323';
-                const response = await fetch(url, {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`
-                    }
-                });
-                const data = await response.json();
-                const subscriberCount = data.user.follower_count;
-
-                const subscriberCountElement = document.getElementById('subscriber-count');
-                subscriberCountElement.textContent = subscriberCount;
-            }
-
-            fetchSubscriberCount().catch(error => console.error(error));
-
-    </script>
 
 </body>
