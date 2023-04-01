@@ -117,7 +117,9 @@
                 <div class="tiktok-something">
                     <h4>Subscribers</h4>
                     <div class="tiktok-something-subs">
-                        <h4>5.6M</h4>
+                    <iframe height="80px" width="100%" frameborder="0"
+                        src=https://livecounts.io/embed/tiktok-live-follower-counter/aaron.vankampen
+                        style="border: 0; "></iframe>
                     </div>
                 </div>
                 <div class="tiktok-countries">
@@ -138,3 +140,28 @@
 
         </section>
     </div>
+
+
+    <script>
+        async function fetchSubscriberCount() {
+                const username = 'aaron.vankampen';
+                const fields = 'follower_count';
+                const url = `https://open.tiktokapis.com/v2/user/info/?username=${username}&fields=${fields}`;
+                const accessToken = 'act.1d1021d2aee3d41fee2d2add43456badMFZnrhFhfWotu3Ecuiuka27L56lr!2323';
+                const response = await fetch(url, {
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`
+                    }
+                });
+                const data = await response.json();
+                const subscriberCount = data.user.follower_count;
+
+                const subscriberCountElement = document.getElementById('subscriber-count');
+                subscriberCountElement.textContent = subscriberCount;
+            }
+
+            fetchSubscriberCount().catch(error => console.error(error));
+
+    </script>
+
+</body>
