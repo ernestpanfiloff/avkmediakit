@@ -80,63 +80,6 @@ header h2 {
     margin-bottom: 1rem;
 }
 
-/* Social Media, 4 columns */
-.social-media {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    gap: 1rem;
-    margin-bottom: 3rem;
-}
-
-.social-media-item {
-    padding: 2rem 1.5rem;
-    border-radius: 1rem;
-    color: #FEFEFF;
-    width: 25%;
-}
-
-.social-media-item:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-}
-
-.social-media-item h3 {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.social-media-item h4 {
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-.social-media-item p {
-    font-size: 0.8rem;
-    font-weight: 300;
-}
-
-
-
-
-
-.social-media-item:nth-child(1) {
-    background-color: #F3406F;
-}
-
-.social-media-item:nth-child(2) {
-    background-color: #FE0000;
-}
-
-.social-media-item:nth-child(3) {
-    background-color: #030100;
-}
-
-.social-media-item:nth-child(4) {
-    background-color: #FEFC00;
-    color: #000000;
-}
 
 
 
@@ -148,7 +91,7 @@ header h2 {
     align-items: center;
     gap: 2rem;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .main-section-item {
