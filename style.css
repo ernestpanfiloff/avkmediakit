@@ -28,11 +28,12 @@ body {
 }
 
 
+
+
 header {
     background-color: #8EDEFB;
     padding: 1.5rem 0;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 header h2 {
@@ -40,6 +41,7 @@ header h2 {
     font-size: 0.9rem;
     font-weight: 600;
 }
+
 
 
 
@@ -112,13 +114,12 @@ header h2 {
 
 
 
-
 .youtube {
     background-color: #FE0100;
     color: #FEFEFF;
     padding: 2rem;
     border-radius: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .youtube-header {
@@ -290,3 +291,6 @@ header h2 {
     font-size: 4rem;
     font-weight: 600;
 }
+
+
+
